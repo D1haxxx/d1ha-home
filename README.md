@@ -11,6 +11,6 @@
 - Dockerfile Location — /Dockerfile
 - Domains — https://d1ha.com
 - Ports Exposes — 8000
-- Healthcheck — GET /healthz, ожидаемый статус 200
+- Healthcheck — встроен в Dockerfile, проверяет GET /healthz на внутреннем порту
 - Environment Variables — PORT=8000 (необязательно, это значение по умолчанию)
 - База данных и volume не нужны. Поле Ports Mappings оставь пустым.
