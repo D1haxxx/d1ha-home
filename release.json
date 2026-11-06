@@ -1,0 +1,11 @@
+{
+  "version": "1.6",
+  "checkpoint": "d1ha_1_6.pt",
+  "previous_checkpoint": "d1ha_1_5.pt",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "architecture": "Completed Mac-trained focused model with explicit topic matching; existing small-talk/older lessons retain the 1.4 model; calculator and web lookup remain separate.",
+  "evaluation": "Raw neural held-out exercises 20/100; practiced topic recall 12/12. Arithmetic remains unreliable; calculator tool retained."
+}

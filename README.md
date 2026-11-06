@@ -1,16 +1,12 @@
-# Family Lab
+# D1ha AI
 
-Стартовая страница для d1ha.com.
-
-Для локального запуска в PowerShell выполни `python server.py` и открой http://localhost:8000.
+Веб-интерфейс D1ha и Python-сервер с моделями, работающими на CPU.
 
 ## Coolify
 
-- Build Pack — Dockerfile
-- Base Directory — /
-- Dockerfile Location — /Dockerfile
-- Domains — https://d1ha.com
-- Ports Exposes — 8000
-- Healthcheck — встроен в Dockerfile, проверяет GET /healthz на внутреннем порту
-- Environment Variables — PORT=8000 (необязательно, это значение по умолчанию)
-- База данных и volume не нужны. Поле Ports Mappings оставь пустым.
+- Build Pack — Dockerfile, Base Directory — /, Dockerfile Location — /Dockerfile.
+- Domains — https://d1ha.com. Ports Exposes — 8000. Ports Mappings — пусто.
+- Environment Variables — PUBLIC_ORIGIN=https://d1ha.com.
+- Healthcheck встроен в Dockerfile и проверяет GET /healthz.
+- Для сохранения отзывов и событий между деплоями добавь именованный volume на /data. Отдельный PostgreSQL для этого приложения не используется.
+- Google-вход и Brave Search необязательны. Гостевой чат работает без них.

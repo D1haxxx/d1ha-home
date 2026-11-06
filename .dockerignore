@@ -1,4 +1,13 @@
 *
-!server.py
-!index.html
 !Dockerfile
+!requirements.txt
+!*.py
+!release.json
+!slang.json
+!*.pt
+!website/
+!website/dist/
+!website/dist/app.js
+!website/dist/index.html
+!website/dist/logo.png
+!website/dist/styles.css

@@ -5,3 +5,7 @@ __pycache__/
 *.pem
 *.key
 *.log
+
+/data/
+/auth_config.json
+/search_config.json
